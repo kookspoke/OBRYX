@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OBRYX - Equipo 95</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rojo: #c0392b;
+      --verde: #27ae60;
+      --amarillo: #f39c12;
+      --gris-claro: #f4f4f4;
+      --gris-oscuro: #2c3e50;
+      --bordo: #922b21;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--gris-claro);
+      color: var(--gris-oscuro);
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    header img {
+      width: 140px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--bordo);
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .section {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      color: var(--bordo);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .section p, .section li {
+      margin-bottom: 0.75rem;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .red { background-color: var(--rojo); }
+    .green { background-color: var(--verde); }
+    .yellow { background-color: var(--amarillo); }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+      justify-items: center;
+    }
+
+    .grid img, .grid video {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    @media(min-width: 600px) {
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      padding: 2rem 1rem;
+    }
+
+    .vote-banner {
+      background: var(--bordo);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-radius: 12px;
+      margin: 2rem auto;
+      max-width: 900px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .vote-banner h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .vote-banner p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .vote-button {
+      background-color: var(--amarillo);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .vote-button:hover {
+      background-color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="archivos/logo.png" alt="Logo OBRYX" />
+    <h1>OBRYX</h1>
+    <p>La comunicación al alcance de tus manos · Equipo 95</p>
+  </header>
+
+  <section class="vote-banner">
+    <h2>📣 ¡Vota por OBRYX!</h2>
+    <p>Apóyanos en la feria de tecnología votando por el Equipo 95. Tu voto nos impulsa a seguir innovando 💡</p>
+    <a href="https://forms.gle/ZoFronJQQd5kBmGM9" target="_blank" class="vote-button">Votar Ahora</a>
+  </section>
+
+  <main class="container">
+
+    <div class="section">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/KoGn_H05CsI" title="Video OBRYX" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>¿Qué es OBRYX?</h2>
+      <p>OBRYX es una pulsera diseñada para contextos subterráneos de alta exigencia. Permite a los trabajadores enviar alertas inmediatas y recibir instrucciones críticas desde un centro de control a través de luces LED.</p>
+    </div>
+
+    <div class="section">
+      <h2>¿Cómo Funciona?</h2>
+      <ul>
+        <li><strong>Botón rojo (OBRYX):</strong> Enviar alerta de accidente</li>
+        <li><strong>Botón amarillo (OBRYX):</strong> Alerta de infraestructura comprometida</li>
+        <li><strong>Botón verde (centro de control):</strong> Reunión en punto de encuentro</li>
+        <li><strong>Botón rojo (centro de control):</strong> Evacuación inmediata</li>
+      </ul>
+      <div class="badges">
+        <span class="badge red">🆘 Accidente</span>
+        <span class="badge yellow">⚠️ Infraestructura</span>
+        <span class="badge green">✅ Reunión</span>
+        <span class="badge red">❌ Evacuación</span>
+      </div>
+      <p><strong>OBRYX</strong> funciona con una señal propia de Wi-Fi Mesh, donde cada pulsera actúa como un repetidor de señal garantizando así una cobertura subterránea total.</p>
+    </div>
+
+    <div class="section">
+      <video autoplay loop muted playsinline style="width: 100%; border-radius: 12px;">
+        <source src="archivos/video_obryx.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="section">
+      <h2>OBRYX en acción</h2>
+      <div class="grid grid-2">
+        <video autoplay loop muted playsinline>
+          <source src="archivos/luz_verde.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop muted playsinline>
+          <source src="archivos/luz_roja.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Centro de Control</h2>
+      <div class="grid grid-2">
+        <img src="archivos/aplicacion_1_.jpg" alt="Centro de control 1">
+        <img src="archivos/aplicacion_2_.jpg" alt="Centro de control 2">
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    OBRYX - Desafíos de la Ingeniería UC · 2025 · Equipo 95
+  </footer>
+</body>
+</html>
